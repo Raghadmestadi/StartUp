@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARTUP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+
+
+</head>
+<style>
+    .hero-bg {
+        text-align: center;
+        padding-top: 2em;
+        margin: 0;
+        padding-bottom: 4em;
+        background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://images.unsplash.com/photo-1462206092226-f46025ffe607?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=874&q=80);
+        background-position: center;
+        background-size: cover;
+        min-height: 93vh;
+        width: 100%;
+        color: white;
+        position: relative;
+    }
+
+    .hero-bg-text h2 {
+        font-size: 45px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .hero-bg-text p {
+        font-size: 17px;
+        margin: 10px 0 40px;
+        color: #fff;
+    }
+
+    .hero-bg-text {
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .button {
+        background: none;
+        text-align: center;
+        color: white;
+        padding: 10px;
+    }
+
+    .button:hover {
+
+        background-color: #0D6EFD;
+
+    }
+
+    .artical {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+        margin-bottom: 10px;
+
+    }
+
+
+    span {
+        color: #3f3f3f;
+    }
+
+    .intro {
+        text-transform: uppercase;
+        text-align: center;
+        margin: 50px;
+        ;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 30px;
+        padding-top: 30px;
+        ;
+    }
+
+
+
+    .About-Us {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 12px;
+        background-color: rgba(240, 240, 240, 0.932);
+    }
+
+    .About-Us p {
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
+    footer {
+        background-color: #F8F9FA;
+
+        text-align: center;
+        padding: 20px;
+    }
+
+    .servecie {
+        display: flex;
+        justify-content: space-around;
+        padding: 4em;
+        margin-bottom: 30px;
+    }
+
+    .search-bar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 1.5rem 2rem;
+        border-top: .1rem solid rgba(225, 2255, 255, 2);
+        display: flex;
+        align-items: center;
+        background-color: #3f3f3f79;
+        z-index: 1001;
+        display: none;
+
+
+    }
+
+    .hide {
+        display: inline-block;
+    }
+
+    .search-bar #search-bar {
+        width: 100%;
+        padding: .5rem;
+        text-transform: none;
+        font-size: 1rem;
+        border-radius: .5rem;
+    }
+
+    .search-bar label {
+        font-size: 1.5rem;
+        margin-left: 1.5rem;
+        color: white;
+    }
+
+
+    .icon img {
+        padding-left: 5px;
+
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light  bg-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold text-black-50" href="#">START<span>UP</span></a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contact</a>
+                        </li>
+                    </ul>
+                    <div class="icon" class="d-flex">
+                        <img src="images/user (2).svg" width="30px" id="login">
+                        <img src="images/search.svg" width="30px" id="search-bar-btn">
+
+
+
+                    </div>
+
+                </div>
+            </div>
+            <form action="" class="search-bar" class="show">
+                <input type="search" id="search-bar" placeholder="Search here..">
+                <label for="search-bar" class="bi bi-search"></label>
+
+            </form>
+        </nav>
+
+        <div class="hero-bg">
+            <div class="hero-bg-text">
+                <h2>Start up your business with us </h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis corrupti ab dolore ipsa
+                    perspiciatis<br>
+                    doloremque quos accusantium fuga recusandae rem.</p>
+                <button class="button">JOIN NOW !</button>
+            </div>
+        </div>
+
+    </header>
+    <h1 class="intro">Welcome to business STARTUP</h1>
+    <section class="artical">
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+                class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Business Counsulting</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Read more</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Marketing Analysis</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Read more</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://images.unsplash.com/photo-1590103514226-48facf4657fe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+                class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Financial planning</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Read more</a>
+            </div>
+        </div>
+
+    </section>
+    <h2> ABOUT US </h2>
+    <section>
+        <div class="About-Us">
+            <img src="https://images.unsplash.com/photo-1529119368496-2dfda6ec2804?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                height="500px" width="700px">
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quos ullam est minus molestias
+                    obcaecati,
+                    consequatur illo animi cupiditate. <br>Eum voluptatum temporibus architecto! Iusto, distinctio.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quos ullam est minus molestias
+                    obcaecati,
+                    consequatur illo animi cupiditate. Eum voluptatum temporibus<br> architecto! Iusto, distinctio.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quos ullam est minus molestias
+                    obcaecati,
+                    consequatur illo animi cupiditate. Eum voluptatum temporibus architecto! Iusto, distinctio.
+                </p>
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+
+            </div>
+        </div>
+    </section>
+    <h2> WHY CHOOSE US </h2>
+    <section class="servecie">
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header fw-bold">ON TIME SERVICE</div>
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header fw-bold">AWESOME SUPPORT</div>
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header fw-bold ">EXPERT ADVISORS</div>
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <i class="bi bi-twitter" style="font-size:30px;padding: 13px"></i>
+        <i class="bi bi-facebook " style="font-size: 30px;padding: 13px"></i>
+        <i class=" bi bi-linkedin" style="font-size: 30px; padding: 13px;"></i>
+
+        <p>STARTUP©2021</p>
+
+    </footer>
+    <script>
+
+        const searchBarBtn = document.querySelector("#search-bar-btn");
+        const searchbar = document.querySelector(".search-bar")
+        searchBarBtn.addEventListener('click', () => {
+            searchbar.classList.toggle('hide')
+        })
+    </script>
+</body>
+
+</html>
